@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
+import { useState, useEffect,useRef } from "react";
+import Typewriter from 'typewriter-effect/dist/core';
 
 const Container = styled.div`
   display: flex;
@@ -71,7 +73,7 @@ const What = styled.div`
 
 const Desc = styled.p`
   font-size: 18px;
-  color: White;
+  color: orange;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
@@ -128,48 +130,67 @@ const Button = styled.button`
   }
 `;
 
-const Sub = styled.h2`
-  color: orange;
-  font-size: 24px;
-`;
+const Hero = ({isMobile}) => {
+  const textRef = useRef(null);  
+  useEffect(() => {
+    const typewriter = new Typewriter(textRef.current, {
+      delay: 110,
+      cursor: "_",
+      loop:true,
+      changeDeleteSpeed: 110,
+    });
 
+    typewriter
+    .pauseFor(1000)
+    .typeString("Hi! I'm Sudhakar Jha,")
+    .pauseFor(500)
+    .deleteAll()
+    .typeString("A Web Developer,")
+    .deleteChars(1)
+    .typeString(" passionate about")
+    .pauseFor(500)
+    .typeString(" building web apps with Django and React.")
+    .deleteAll()
+    .typeString("Unleash your creativity and")
+    .pauseFor(500)
+    .typeString(" build a better digital world with me.")
+    .pauseFor(500)
+    .start();
+  }, []);
 
-
-const Hero = () => {
   return (
-    
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto`} id="hero">
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+          <Title>Think,Make And Solve.</Title>
           <What>
             <Line src="./line.png" />
-            <Sub> What we Do</Sub>
+            {/* <Sub> What we Do</Sub> */}
           </What>
-          <Desc>
-            we enjoy creating delightful,human-centred digital experiences
+          <Desc  ref={textRef}>
+          "Unleash your creativity and build a better digital world with me."
           </Desc>
-          <Button>learn more</Button>
         </Left>
         <Right>
-          <Canvas>
-            <OrbitControls enableZoom={false} autoRotate />
-            <ambientLight intensity={1} />
-            <directionalLight position={[5, 2, 1]} />
-            <Sphere args={[1.04, 100, 200]} scale={2.4}>
-              <MeshDistortMaterial
-                color="#6C0BA9"
-                attach="material"
-                distort={0.5}
-                speed={2}
-              />
-            </Sphere>
-          </Canvas>
+          {isMobile && (
+            <Canvas>
+              <OrbitControls enableZoom={false} autoRotate />
+              <ambientLight intensity={1} />
+              <directionalLight position={[5, 2, 1]} />
+              <Sphere args={[1.04, 100, 200]} scale={2.4}>
+                <MeshDistortMaterial
+                  color="#6C0BA9"
+                  attach="material"
+                  distort={0.5}
+                  speed={2}
+                />
+              </Sphere>
+            </Canvas>
+          )}
           <Img src="./moon.png" />
         </Right>
       </Container>
     </section>
-   
   );
 };
 

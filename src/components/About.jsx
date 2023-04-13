@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect/dist/core';
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -35,7 +36,31 @@ const ServiceCard = ({ index, title, icon }) => (
   </Tilt>
 );
 
-const About = () => {
+const About = ({}) => {
+  useEffect(() => {
+    const typewriter = new Typewriter('#typewriter', {
+      loop: false,
+      delay: 50,
+      cursor: '_',
+    });
+
+    typewriter
+    .typeString( `<strong>Sudhakar Jha</strong> and I'm a skilled software developer
+    with expertise in <strong>Python</strong>, <strong>JavaScript</strong>, and
+    <strong>C++</strong>. I specialize in using popular frameworks like
+    <strong>Django</strong>, <strong>React</strong>, <strong>Node.js</strong>, and
+    <strong>Three.js</strong> to create efficient, scalable, and user-friendly
+    solutions that solve real-world problems. With a passion for learning and
+    collaborating closely with clients, I am confident in my ability to turn
+    your ideas into reality. Whether you need a website, web application, or
+    a complex software system, I have the skills and expertise to make it
+    happen. So, if you're looking for a reliable, experienced, and creative
+    software developer, look no further. Let's work together to bring your
+    ideas to life!`)
+    .pauseFor(1000)
+    .start();
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -45,13 +70,10 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-white text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Welcome to my portfolio website! My name is{' '}
+        <span id="typewriter"></span>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -62,5 +84,6 @@ const About = () => {
     </>
   );
 };
+
 
 export default SectionWrapper(About, "about");
