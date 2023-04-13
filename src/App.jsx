@@ -63,7 +63,7 @@ const App = () => {
           <Navbar />
           {isMobile && <LazyLoadedStarsCanvas shouldRender={shouldRenderHeroCanvas} />}
           {!isMobile && <StarsCanvas/>}
-          <Hero isMobile={shouldRenderHeroCanvas}/>
+          <Hero isMobile={isMobile}/>
         </div>
         <div>
           <About/>

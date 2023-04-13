@@ -16,6 +16,9 @@ import {
   starbucks,
   tesla,
   shopify,
+  harward,
+  google,
+  microsoft,
   carrent,
   jobit,
   tripguide,
@@ -105,63 +108,65 @@ const technologies = [
 ];
 
 const experiences = [
+  {   
+  title: "CS50W Course",
+  company_name: "Harvard University",
+  icon: harward,   
+  iconBg: "#5D5C61", 
+  date: "June 2021 - August 2021",   
+  points: [      
+    "Completed CS50W course, which covers web development using Python, Django, HTML, CSS, JavaScript, and SQL.",  
+    "Implemented various web applications and learned about important web development concepts such as MVC architecture, RESTful API, and user authentication.",  
+    "Worked on a final project, which involved developing a social network website similar to Twitter, where users can post tweets, follow other users, like tweets, and send direct messages.",  
+   ],
+   certificate: "https://certificates.cs50.io/146e1211-e893-4411-befb-5ec2bee626a5.pdf?size=letter",
+  },
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Google IT Support Professional Certificate",
+    company_name: "Google",
+    icon: google,
+    iconBg: "#FFFFFF",
+    date: "September 2021 - November 2021",
+    points: [
+      "Completed the Google IT Support Professional Certificate, which covers foundational skills for IT support, including troubleshooting, customer service, networking, operating systems, system administration, and security.",
+      "Learned how to troubleshoot basic computer issues, set up and maintain computer networks, configure operating systems, manage user accounts, and implement security measures.",
+      "Completed a capstone project, which involved troubleshooting and fixing various IT issues in a simulated business environment.",
+    ],
+    certificate: "https://www.coursera.org/account/accomplishments/specialization/certificate/PJH6LLM9JTDQ",
+  },
+  {
+    title: "Microsoft Azure AI Fundamentals",
+    company_name: "Microsoft",
+    icon: microsoft,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2022 - February 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed the Microsoft Azure AI Fundamentals course, which covers the fundamentals of artificial intelligence and machine learning.",
+      "Learned about important AI concepts such as machine learning models, data analysis, computer vision, natural language processing, and speech recognition.",
+      "Developed practical skills by working on hands-on labs and projects, including training machine learning models and building intelligent applications using Azure services.",
     ],
+    certificate: "https://www.credly.com/badges/652bfdaf-310c-4c9a-97cb-6777ef426ef5/public_url",
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
+    title: "Advanced React Course",
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "March 2022 - April 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed an advanced React course, which covers advanced topics in React development such as performance optimization, code splitting, server-side rendering, and testing.",
+      "Learned about important React libraries and tools such as Redux, React Router, Webpack, Babel, and Jest.",
+      "Developed practical skills by working on a final project, which involved building a scalable e-commerce website using React, Redux, and other related technologies.",
     ],
+    certificate: "https://www.coursera.org/account/accomplishments/specialization/certificate/2ZQZQZQZQZQZ",
   },
 ];
 
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "My Portfolio",
+    live_demo_link:"#",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -182,7 +187,8 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "NewsJunction",
+    live_demo_link:"https://newsjunction.sudhakarjha.live/",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -204,6 +210,7 @@ const projects = [
   },
   {
     name: "Trip Guide",
+    live_demo_link:"#Hi",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [

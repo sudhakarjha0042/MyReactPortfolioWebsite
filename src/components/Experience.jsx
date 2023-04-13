@@ -40,6 +40,14 @@ const ExperienceCard = ({ experience }) => {
         >
           {experience.company_name}
         </p>
+          <a
+            href={experience.certificate}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary text-[16px] font-semibold underline mt-2"
+          >
+            Download Certificate
+          </a>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
@@ -60,8 +68,8 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+        <p className={styles.sectionSubText}>Completed Courses and Key Takeaways.</p>
+        <h2 className={styles.sectionHeadText}>My Quest for Knowledge:</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">

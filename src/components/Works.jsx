@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -42,6 +43,14 @@ const ProjectCard = ({
         </div>
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <a
+            href={live_demo_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary text-[16px] font-semibold underline mt-2"
+          >
+            Live Demo
+          </a>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
@@ -63,7 +72,6 @@ const Works = () => {
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
-
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}

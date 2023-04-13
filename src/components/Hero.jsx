@@ -114,21 +114,7 @@ const Img = styled.img`
   }
 `;
 
-const Button = styled.button`
-  border: none;
-  border-radius: 5px;
-  background-color: orange;
-  color: white;
-  width: 120px;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: 500;
 
-  @media screen and (min-width: 768px) {
-    width: 100px;
-    padding: 10px 20px;
-  }
-`;
 
 const Hero = ({isMobile}) => {
   const textRef = useRef(null);  
@@ -172,7 +158,7 @@ const Hero = ({isMobile}) => {
           </Desc>
         </Left>
         <Right>
-          {isMobile && (
+          {!isMobile && (
             <Canvas>
               <OrbitControls enableZoom={false} autoRotate />
               <ambientLight intensity={1} />

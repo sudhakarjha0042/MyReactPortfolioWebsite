@@ -23,10 +23,13 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
+import microsoft from "./company/microsoft.png";
+import harward from "./company/harward.png";
+import google from "./company/google.jpg";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import carrent from "./MyPortfolio.png";
+import jobit from "./NewsJunction.png";
 import tripguide from "./tripguide.png";
 import react from "./react.png";
 
@@ -59,4 +62,7 @@ export {
   jobit,
   tripguide,
   react,
+  microsoft,
+  harward,
+  google,
 };
