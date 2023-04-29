@@ -1,9 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  ![Project Banner](readme_assets/readme_banner.png#gh-dark-mode-only)
-  ![Project Banner](readme_assets/readme_banner-light.png#gh-light-mode-only)
-
   <h1>Three.js 3D Portfolio</h1>
   
   <p>
@@ -33,16 +30,9 @@
 </p>
    
  <h4>
-    <a href="https://threejs-3-d-portfolio.vercel.app/">View Demo</a>
+    <a href="https://sudhakarjha.netlify.app/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/ladunjexa/Threejs_3D_Portfolio">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/ladunjexa/Threejs_3D_Portfolio/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/ladunjexa/Threejs_3D_Portfolio/issues/">Request Feature</a>
-  </h4>
 </div>
-
 <br />
 
 <!-- Table of Contents -->
@@ -118,7 +108,7 @@ Threejs_3D_Portfolio/
 Download or clone this repo by using the link below:
 
 ```bash
- https://github.com/ladunjexa/Threejs_3D_Portfolio
+ https://github.com/sudhakarjha0042/MyReactPortfolioWebsite.git
 ```
 
 #### Step 2:
@@ -176,12 +166,6 @@ At the main folder execute the following command in console to run the developme
 
 <!-- Contributing -->
 ## :wave: Contributing
-
-<a href="https://github.com/ladunjexa/Threejs_3D_Portfolio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ladunjexa/Threejs_3D_Portfolio" />
-</a>
-
-
 Contributions are always welcome!
 
 See [`contributing.md`](https://contributing.md/) for ways to get started.
@@ -209,9 +193,7 @@ Distributed under the MIT License. See [LICENSE.txt](https://github.com/ladunjex
 <!-- Contact -->
 ## :handshake: Contact
 
-Liron Abutbul - [@lironabutbul6](https://twitter.com/lironabutbul6) - [@ladunjexa](https://t.me/ladunjexa)
-
-Project Link: [https://github.com/ladunjexa/Threejs_3D_Portfolio](https://github.com/ladunjexa/Threejs_3D_Portfolio)
+Project Link: [https://github.com/sudhakarjha0042/MyReactPortfolioWebsite](https://github.com/sudhakarjha0042/MyReactPortfolioWebsite)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
