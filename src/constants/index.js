@@ -113,7 +113,7 @@ const experiences = [
   company_name: "Harvard University",
   icon: harward,   
   iconBg: "#5D5C61", 
-  date: "June 2021 - August 2021",   
+  date: "November 2022 - March 2023",   
   points: [      
     "Completed CS50W course, which covers web development using Python, Django, HTML, CSS, JavaScript, and SQL.",  
     "Implemented various web applications and learned about important web development concepts such as MVC architecture, RESTful API, and user authentication.",  
@@ -126,7 +126,7 @@ const experiences = [
     company_name: "Google",
     icon: google,
     iconBg: "#FFFFFF",
-    date: "September 2021 - November 2021",
+    date: "December 2022 - March 2023",
     points: [
       "Completed the Google IT Support Professional Certificate, which covers foundational skills for IT support, including troubleshooting, customer service, networking, operating systems, system administration, and security.",
       "Learned how to troubleshoot basic computer issues, set up and maintain computer networks, configure operating systems, manage user accounts, and implement security measures.",
@@ -139,7 +139,7 @@ const experiences = [
     company_name: "Microsoft",
     icon: microsoft,
     iconBg: "#383E56",
-    date: "January 2022 - February 2022",
+    date: "January 2022 - April 2022",
     points: [
       "Completed the Microsoft Azure AI Fundamentals course, which covers the fundamentals of artificial intelligence and machine learning.",
       "Learned about important AI concepts such as machine learning models, data analysis, computer vision, natural language processing, and speech recognition.",
@@ -152,13 +152,13 @@ const experiences = [
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "March 2022 - April 2022",
+    date: "March 2022 - May 2022",
     points: [
       "Completed an advanced React course, which covers advanced topics in React development such as performance optimization, code splitting, server-side rendering, and testing.",
       "Learned about important React libraries and tools such as Redux, React Router, Webpack, Babel, and Jest.",
       "Developed practical skills by working on a final project, which involved building a scalable e-commerce website using React, Redux, and other related technologies.",
     ],
-    certificate: "https://www.coursera.org/account/accomplishments/specialization/certificate/2ZQZQZQZQZQZ",
+    certificate: "https://www.coursera.org/account/accomplishments/verify/QF8Q5WUPW9JK",
   },
 ];
 

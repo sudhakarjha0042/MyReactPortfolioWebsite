@@ -40,7 +40,7 @@ const About = ({}) => {
   useEffect(() => {
     const typewriter = new Typewriter('#typewriter', {
       loop: false,
-      delay: 50,
+      delay: 30,
       cursor: '_',
     });
 
@@ -57,7 +57,7 @@ const About = ({}) => {
     happen. So, if you're looking for a reliable, experienced, and creative
     software developer, look no further. Let's work together to bring your
     ideas to life!`)
-    .pauseFor(1000)
+    .pauseFor(10000000000000)
     .start();
   }, []);
 
@@ -70,7 +70,7 @@ const About = ({}) => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-white text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         Welcome to my portfolio website! My name is{' '}
         <span id="typewriter"></span>

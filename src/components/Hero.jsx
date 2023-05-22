@@ -73,7 +73,7 @@ const What = styled.div`
 
 const Desc = styled.p`
   font-size: 18px;
-  color: orange;
+  color: rgb(170 166 195);
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
